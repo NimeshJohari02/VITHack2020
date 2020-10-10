@@ -3,3 +3,8 @@ nav{
     height: 50px;
 }
 
+#logo{
+    color: black;
+    font-family: Quicksand;
+    padding: 5px;
+}

@@ -3,78 +3,97 @@ url_for('static',filename='css/index.css') }}>
 <title>First Page</title>
 
 {% endblock head %} {% block body %}
+<div class="container">
+  <div class="z-depth-2 yellow center topbar text-flow">Title Here</div>
+  <div class="container">
+    <div class="container">
+      <div>
+        <h3 class="flow-text">What's going on? Help us understand you</h3>
+        <p></p>
+      </div>
 
-<div id="header2">
-  <div>
-    <h2>What's going on? Help us understand you</h2>
-  </div>
-  <div>
-    <p>
-      Answer the following questions honestly and we will help you live a life
-      full of purpose and fullfillment
-    </p>
-  </div>
-</div>
-<div class="slideshow-container">
-  <div class="mySlides">
-    <q> Let's start with your name! </q>
-    <input id="q1" type="text" />
-  </div>
-  <div class="mySlides">
-    <q>How do you feel about your academic performance lately? </q>
-    <input id="q2" type="text" />
-  </div>
-  <div class="mySlides">
-    <q> How has lockdown been for you? Don't hold back :) Let it out </q>
-    <input id="q3" type="text" />
-  </div>
-  <div class="mySlides">
-    <q> How's your home environment like? Are you comfortable? </q>
-    <input id="q4" type="text" />
-  </div>
-  <div class="mySlides">
-    <q> What do you do to relieve yourself from academic stress?</q>
-    <input id="q5" type="text" />
-  </div>
-  <div class="mySlides">
-    <q>How's your social circle? Do you have a vent-out buddy? </q>
-    <input id="q6" type="text" />
-  </div>
-  <div class="mySlides">
-    <q> What do you looking forward to everyday you wake up? </q>
-    <input id="q7" type="text" />
-  </div>
-  <div class="mySlides">
-    <q> Anything else you want to share? We'd be glad to hear you out! </q>
-    <input id="q8" type="text" />
-  </div>
-  <div class="mySlides">
-    <q> What do you think limits / binds you ? </q>
-    <input id="q9" type="text" />
-  </div>
-  <div class="mySlides">
-    <q>
-      Have you ever experienced fear or judgement or any other thing of that
-      sort ?
-    </q>
-    <input id="q10" type="text" />
-  </div>
-</div>
+      <div>
+        <p>
+          Answer the following questions honestly and may be able to help you
+          through whatever tough times you are going through The ocean may seem
+          full of sharks sometimes but do not worry . It's only a matter of time
+          and you'll be able to sail through the storm as though it was just a
+          puny wave :)
+        </p>
+      </div>
+    </div>
+    <div class="pink lighten-5 slideshow-container container">
+      <div class="container question mySlides">
+        <q> Let's start with your name! </q>
+        <input class="" id="q1" type="text" />
+      </div>
+      <div class="container question mySlides">
+        <q>How do you feel about your academic performance lately? </q>
+        <input class="" id="q2" type="text" />
+      </div>
+      <div class="container question mySlides">
+        <q> How has lockdown been for you? Don't hold back :) Let it out </q>
+        <input class="" id="q3" type="text" />
+      </div>
+      <div class="container question mySlides">
+        <q> How's your home environment like? Are you comfortable? </q>
+        <input class="" id="q4" type="text" />
+      </div>
+      <div class="container question mySlides">
+        <q> What do you do to relieve yourself from academic stress?</q>
+        <input class="" id="q5" type="text" />
+      </div>
+      <div class="container question mySlides">
+        <q>How's your social circle? Do you have a vent-out buddy? </q>
+        <input class="" id="q6" type="text" />
+      </div>
+      <div class="container question mySlides">
+        <q> What do you looking forward to everyday you wake up? </q>
+        <input class="" id="q7" type="text" />
+      </div>
+      <div class="container question mySlides">
+        <q> Anything else you want to share? We'd be glad to hear you out! </q>
+        <input id="q8" type="text" />
+      </div>
+      <div class="container question mySlides">
+        <q> What do you think limits / binds you ? </q>
+        <input class="" id="q9" type="text" />
+      </div>
+      <div class="container question mySlides">
+        <q>
+          Have you ever experienced fear or judgement or any other thing of that
+          sort ?
+        </q>
+        <input class="" id="q10" type="text" />
+      </div>
+    </div>
 
-<!-- Dots/bullets/indicators -->
-<div class="dot-container">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-  <span class="dot" onclick="currentSlide(6)"></span>
-  <span class="dot" onclick="currentSlide(7)"></span>
-  <span class="dot" onclick="currentSlide(8)"></span>
-  <span class="dot" onclick="currentSlide(9)"></span>
-  <span class="dot" onclick="currentSlide(10)"></span>
+    <!-- Dots/bullets/indicators -->
+    <div class="pink lighten-5 dot-container container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+    </div>
+    <div class="container">
+      <a
+        onclick="plusSlides(-1)"
+        class="yellow black-text waves-effect waves-light btn"
+        ><i class="material-icons left">skip_previous </i>Back</a
+      >
+      <a
+        onclick="plusSlides(1)"
+        class="yellow black-text right waves-effect waves-light btn"
+        ><i class="material-icons right">skip_next</i>Next</a
+      >
+    </div>
+  </div>
 </div>
-<a class="prev" onclick="plusSlides(-1)">Back</a>
-<a class="next" onclick="plusSlides(1)">Next</a>
 <script src="{{
   url_for('static',filename='js/carousel.js') }}"></script>
-{% endblock %}
+{% endblock body %}

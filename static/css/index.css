@@ -83,16 +83,16 @@ q {
   color: cornflowerblue;
 }
 
-body h3{
+body h3 {
   font-family: Quicksand;
   font-size: 50px;
 }
 
-body p{
+body p {
   font-family: Quicksand;
   font-size: 20px;
 }
 
-.slide1{
-  background-color: #FFE8E8;
+.slide1 {
+  background-color: #ffe8e8;
 }

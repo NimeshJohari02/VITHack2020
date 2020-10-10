@@ -16,11 +16,11 @@ function showSlides(n) {
   if (n == slides.length) {
     document.getElementById(
       "nextbtn"
-    ).innerHTML = `<input type="submit" value ="Submit Your Responses ">`;
+    ).innerHTML = `<input class="yellow black-text right waves-effect waves-light btn" type="submit" form ="myform" value ="Submit Your Responses " />`;
   } else {
     document.getElementById(
       "nextbtn"
-    ).innerHTML = `<i class="material-icons right">skip_next</i>Next`;
+    ).innerHTML = `<a onclick="plusSlides(1)" class="yellow black-text right waves-effect waves-light btn"><i class="material-icons right">skip_next</i>Next</a>`;
   }
   if (slideIndex == 1) {
     document.getElementById("prevbtn").style.display = "none";

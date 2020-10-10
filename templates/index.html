@@ -19,7 +19,7 @@ url_for('static',filename='css/index.css') }}>
         </p>
       </div>
 
-<form action="/result" method="POST">
+<form id ="myform" action="/result" method="POST">
     <div class="yellow lighten-4 slideshow-container container">
       <div class="container question mySlides">
         <q> Let's start with your name! </q>
@@ -86,12 +86,12 @@ url_for('static',filename='css/index.css') }}>
         class="yellow black-text waves-effect waves-light btn"
         ><i class="material-icons left">skip_previous </i>Back</a
       >
-      <a
-        id="nextbtn"
+      
+      <div id="nextbtn"><a
         onclick="plusSlides(1)"
         class="yellow black-text right waves-effect waves-light btn"
         ><i class="material-icons right">skip_next</i>Next</a
-      >
+      ></div>
     </div>
   </div>
 </div>

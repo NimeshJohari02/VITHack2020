@@ -17,6 +17,10 @@ function showSlides(n) {
     document.getElementById(
       "nextbtn"
     ).innerHTML = `<input type="submit" value ="Submit Your Responses ">`;
+  } else {
+    document.getElementById(
+      "nextbtn"
+    ).innerHTML = `<i class="material-icons right">skip_next</i>Next`;
   }
   if (slideIndex == 1) {
     document.getElementById("prevbtn").style.display = "none";

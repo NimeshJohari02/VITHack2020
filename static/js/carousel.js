@@ -13,6 +13,16 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
+  if (n == slides.length) {
+    document.getElementById(
+      "nextbtn"
+    ).innerHTML = `<input type="submit" value ="Submit Your Responses ">`;
+  }
+  if (slideIndex == 1) {
+    document.getElementById("prevbtn").style.display = "none";
+  } else if (slideIndex > 1) {
+    document.getElementById("prevbtn").style.display = "inline-block";
+  }
   if (n > slides.length) {
     slideIndex = 1;
   }

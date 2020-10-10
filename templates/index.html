@@ -1,52 +1,80 @@
-{% extends 'base.html' %}
-
-{% block head %}
-
-<link rel="stylesheet"
-href={{ url_for('static',filename='css/index.css') }}>
+{% extends 'base.html' %} {% block head %} <link rel="stylesheet" href={{
+url_for('static',filename='css/index.css') }}>
 <title>First Page</title>
 
-{% endblock %}
+{% endblock head %} {% block body %}
 
-{% block body %}
-
-<div id="header">
-    <div>
-        <h1>What's going on? Help us understand you</h1>
-    </div>
-    <div>
-        <p>Answer the following questions honestly and we will help you live a life full of purpose and fullfillment</p>
-    </div>
+<div id="header2">
+  <div>
+    <h2>What's going on? Help us understand you</h2>
+  </div>
+  <div>
+    <p>
+      Answer the following questions honestly and we will help you live a life
+      full of purpose and fullfillment
+    </p>
+  </div>
+</div>
+<div class="slideshow-container">
+  <div class="mySlides">
+    <q> Let's start with your name! </q>
+    <input id="q1" type="text" />
+  </div>
+  <div class="mySlides">
+    <q>How do you feel about your academic performance lately? </q>
+    <input id="q2" type="text" />
+  </div>
+  <div class="mySlides">
+    <q> How has lockdown been for you? Don't hold back :) Let it out </q>
+    <input id="q3" type="text" />
+  </div>
+  <div class="mySlides">
+    <q> How's your home environment like? Are you comfortable? </q>
+    <input id="q4" type="text" />
+  </div>
+  <div class="mySlides">
+    <q> What do you do to relieve yourself from academic stress?</q>
+    <input id="q5" type="text" />
+  </div>
+  <div class="mySlides">
+    <q>How's your social circle? Do you have a vent-out buddy? </q>
+    <input id="q6" type="text" />
+  </div>
+  <div class="mySlides">
+    <q> What do you looking forward to everyday you wake up? </q>
+    <input id="q7" type="text" />
+  </div>
+  <div class="mySlides">
+    <q> Anything else you want to share? We'd be glad to hear you out! </q>
+    <input id="q8" type="text" />
+  </div>
+  <div class="mySlides">
+    <q> What do you think limits / binds you ? </q>
+    <input id="q9" type="text" />
+  </div>
+  <div class="mySlides">
+    <q>
+      Have you ever experienced fear or judgement or any other thing of that
+      sort ?
+    </q>
+    <input id="q10" type="text" />
+  </div>
 </div>
 
-<!-- Slideshow container -->
-<div class="slideshow-container">
-
-    <!-- Full-width slides/quotes -->
-    <div class="mySlides">
-      <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-      <p class="author">- John Keats</p>
-    </div>
-  
-    <div class="mySlides">
-      <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-      <p class="author">- Ernest Hemingway</p>
-    </div>
-  
-    <div class="mySlides">
-      <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-      <p class="author">- Thomas A. Edison</p>
-    </div>
-  
-    <!-- Next/prev buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  
-  <!-- Dots/bullets/indicators -->
-  <div class="dot-container">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-{% endblock %} 
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+</div>
+<a class="prev" onclick="plusSlides(-1)">Back</a>
+<a class="next" onclick="plusSlides(1)">Next</a>
+<script src="{{
+  url_for('static',filename='js/carousel.js') }}"></script>
+{% endblock %}

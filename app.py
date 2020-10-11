@@ -34,9 +34,9 @@ def result():
         print(score_round2)
         print(score_round)
         recom = ""
-        if score_round<=3:
-            recom = "Hello" + q1 + " . It seems that you are going strong .  You are seeing this message because you did relatively well in our psych evaluation . It seems that you are going strong and are not on a path which would hamper your health.. What we recommend you is that you take a few days off from studies .. Probably go out on a trip with your mom and dad . We know you may feel that you are completely fine but there's still a ripple of anxiety in your thoughts and you must not let it go unnoticed . It's a well heard saying that a stitch in time saves nine . If you feel anything's bothering you feel free to reach out to any of us and open up . We may be able to help you analyze  the scenario a little better"
-        elif score_round<=7:
+        if score_round>=7:
+            recom = "Hello " + q1 + " . It seems that you are going strong .  You are seeing this message because you did relatively well in our psych evaluation . It seems that you are going strong and are not on a path which would hamper your health.. What we recommend you is that you take a few days off from studies .. Probably go out on a trip with your mom and dad . We know you may feel that you are completely fine but there's still a ripple of anxiety in your thoughts and you must not let it go unnoticed . It's a well heard saying that a stitch in time saves nine . If you feel anything's bothering you feel free to reach out to any of us and open up . We may be able to help you analyze  the scenario a little better"
+        elif score_round>=3:
             recom = "Hang in there " + q1 + " . It must be a tough and challenging time . We all know the competition is getting more and more challenging as we say but it does not  mean that we lose all hope and sit back . It these challenging times that act as a true strength of mettle .Your journey may be ordinary but the ending will be phenomenal only if you believe so . We would recommend you that sometime in a day you sit back and meditate. We recommend the Headspace Library for self meditation purposes also may recommend few minutes from your schedule to give a try to yoga . Also whenever you feel the ship sinking think about how much effort you've made to keep this brig afloat . All the effort that you have been putting in should and will not go to waste only if you meditate for some time and spent some quality time with your family so you are not sucked in by the monotonic and vicious cycle of loneliness and depression"
         else:
             recom = """<br><br>Hey there """ + q1 + """ Seems like you are facing a bit of an issue regarding your personal health and here we are concerned for your health and well-being in this competitive environment . These are the steps that we recommend <br><br> <ol><li> Visit your nearest  Doctor / psychiatrist for a consultation and adhere to the medicines that he/she prescribes .</li> <li> One On  One counseling sessions with some registered practitioner who would help you to open up to people </li>
@@ -48,13 +48,13 @@ def result():
             </ol>"""
 
         summary = ""
-        if score_round<=3:
+        if score_round>=7:
             summary = "You're doing fine just a few pit-stops and you'll be on your way to success"
-        elif score_round<=7:
+        elif score_round>=3:
             summary = "It's a forest a deep one but don't worry the moonlight shall guide you"
         else:
             summary = "The guardian at the end of the dark tunnel awaits your arrival"
-        return render_template('Result.html', score = score_round, rec = recom, Summary = summary)
+        return render_template('Result.html', score = 10-score_round, rec = recom, Summary = summary)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,19 @@
+{
+  "name": "vithack2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arnab-31/VITHack2020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arnab-31/VITHack2020/issues"
+  },
+  "homepage": "https://github.com/Arnab-31/VITHack2020#readme"
+}
